@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic function</title>
+
+</head>
+
+<body>
+    <Script>
+        function addition() {
+            var a = parseInt(document.cal.first.value);
+            var b = parseInt(document.cal.second.value);
+            var c = a + b;
+           document.cal.total.value=c;
+
+        }
+        
+
+        function subtraction() {
+            var a = parseInt(document.cal.first.value);
+            var b = parseInt(document.cal.second.value);
+            var c = a - b;
+           document.cal.total.value=c;
+
+        }
+        
+        function multiplication() {
+            var a = parseInt(document.cal.first.value);
+            var b = parseInt(document.cal.second.value);
+            var c = a * b;
+           document.cal.total.value=c;
+        }
+
+        function division() {
+            var a = parseInt(document.cal.first.value);
+            var b = parseInt(document.cal.second.value);
+            var c = a / b;
+           document.cal.total.value=c;
+
+        }
+
+        function modulus() {
+            var a = parseInt(document.cal.first.value);
+            var b = parseInt(document.cal.second.value);
+            var c = a % b;
+           document.cal.total.value=c;
+        }
+
+        function exponentiation() {
+            var a = parseInt(document.cal.first.value);
+            var b = parseInt(document.cal.second.value);
+            var c = a ** b;
+           document.cal.total.value=c;
+        }
+                
+    </Script>
+
+    <form name="cal">
+
+    Number 1 : <input type="text" name="first"><br><br>
+
+    Number 2 : <input type="text" name="second">
+
+    <br><br>
+
+    <input type="button" value="Add" onclick="addition();">
+    <input type="button" value="Sub" onclick="subtraction();">
+    <input type="button" value="Mul" onclick="multiplication();">
+    <input type="button" value="Div" onclick="division();">
+    <input type="button" value="Mod" onclick="modulus();">
+    <input type="button" value="Exp" onclick="exponentiation();">
+
+    <br><br>
+
+    Get Result : <input type="text" name="total">
+</body>
+
+</html>
